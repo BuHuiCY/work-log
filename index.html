@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>工作记录站 | Work Log</title>
+  <title>济祯的工作记录站 | Work Log</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -931,7 +931,7 @@
   <!-- Header -->
   <header class="header">
     <div class="header-inner">
-      <div class="logo"><span>//</span> 工作记录站</div>
+      <div class="logo"><span>//</span> 济祯的工作记录站</div>
       
       <div class="search-box">
         <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1198,7 +1198,6 @@
       document.getElementById('entryType').value = entry ? entry.type : 'log';
       document.getElementById('entryDate').value = entry ? entry.date : new Date().toISOString().split('T')[0];
       document.getElementById('entryContent').value = entry ? entry.content : '';
-      document.getElementById('entryCompleted').checked = entry ? entry.completed : false;
       
       document.getElementById('taskEditorGroup').style.display = 
         (entry ? entry.type : 'log') === 'progress' ? 'block' : 'none';
